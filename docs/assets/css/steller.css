@@ -11683,3 +11683,24 @@ pre {
 .section.bg-gray {
   background: white;
 }
+
+.video-container {
+  display: flex;
+  justify-content: flex-start; /* Pushes video to the right */
+  align-items: flex-start; /* Ensures it's not centered vertically */
+  margin-top: 150px;
+  margin-left: 200px;
+  gap: 50px;
+  width: 100%;
+}
+.video-wrapper{
+  margin-left: 20px;
+}
+
+video {
+  width: 100%; /* Adjust as needed */
+}
+
+.side-video-desc{
+  width: 500px;
+}
