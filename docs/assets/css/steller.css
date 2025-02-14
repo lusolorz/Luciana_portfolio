@@ -11694,13 +11694,48 @@ pre {
   width: 100%;
 }
 .video-wrapper{
-  margin-left: 20px;
+  margin-left: 200px;
 }
 
 video {
+  /* width: 500px; */
+  height: 640px;
   width: 100%; /* Adjust as needed */
 }
 
 .side-video-desc{
   width: 500px;
 }
+
+@media (max-width: 380px) {
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+    margin-left: 0px;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+  }
+  .video-wrapper{
+    /* margin-left: 10px; */
+    margin:0;
+    padding:0;
+    align-content: center;
+    width: 100%
+  }
+
+  .video{
+    /* height: 290px;  */
+    width: 100%;
+  }
+
+  .side-video-desc{
+    width: 100%;
+    padding: 5px;
+    /* margin-left: 5px; */
+    text-align: center;
+  }
+}
+/* change to min width to keep instyle with template */
