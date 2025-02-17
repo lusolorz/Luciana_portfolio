@@ -11686,25 +11686,25 @@ pre {
 
 .video-container {
   display: flex;
-  justify-content: flex-start; /* Pushes video to the right */
+  justify-content: flex-start; /* Pushes video to the left */
   align-items: flex-start; /* Ensures it's not centered vertically */
   margin-top: 150px;
-  margin-left: 200px;
+  margin-left: 250px;
+  /* margin-right: 250px; */
   gap: 50px;
-  width: 100%;
-}
-.video-wrapper{
-  margin-left: 200px;
+  width: 70%;
 }
 
 video {
   /* width: 500px; */
-  height: 640px;
   width: 100%; /* Adjust as needed */
 }
 
+/* Mobile view Plotweb */
 .side-video-desc{
-  width: 500px;
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 380px) {
@@ -11732,6 +11732,7 @@ video {
   }
 
   .side-video-desc{
+    margin-top: 0;
     width: 100%;
     padding: 5px;
     /* margin-left: 5px; */
