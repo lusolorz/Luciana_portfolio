@@ -11686,11 +11686,11 @@ pre {
 
 .video-container {
   display: flex;
-  justify-content: flex-start; /* Pushes video to the left */
-  align-items: flex-start; /* Ensures it's not centered vertically */
+  /* justify-content: flex-start; /* Pushes video to the left 
+  align-items: flex-start; Ensures it's not centered vertically */
   margin-top: 150px;
   margin-left: 250px;
-  /* margin-right: 250px; */
+  margin-right: 250px;
   gap: 50px;
   width: 70%;
 }
@@ -11707,7 +11707,7 @@ video {
   text-align: center;
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
 
   .video-container {
     display: flex;
@@ -11728,7 +11728,9 @@ video {
 
   .video{
     /* height: 290px;  */
-    width: 100%;
+    width: 288px;
+    margin: auto 0;
+    /* width: 100%; */
   }
 
   .side-video-desc{
