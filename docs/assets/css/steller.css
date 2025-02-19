@@ -11686,50 +11686,114 @@ pre {
 
 .video-container {
   display: flex;
-  /* justify-content: flex-start; /* Pushes video to the left 
-  align-items: flex-start; Ensures it's not centered vertically */
-  margin-top: 150px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-top: 5vh; 
+  margin-left: auto; 
+  margin-right: auto; 
   gap: 50px;
-  width: 70%;
+  /* width: 70%; */
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  width: 70vw;            /* Full viewport width */
+  height: 100vh;
 }
 
-video {
+.video-plotweb{
   /* width: 500px; */
-  width: 100%; /* Adjust as needed */
+  width: 45vh; /* Adjust as needed */
 }
 
 /* Mobile view Plotweb */
 .side-video-desc{
-  margin-top: 200px;
   width: 100%;
   text-align: center;
 }
+
+.centered-header{
+  padding-top: 3vh;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline-section {
+  position: relative; 
+  width: 80vw;
+  height: 200vh; 
+  display: flex;
+  margin-left: auto; 
+  margin-right: auto; 
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rectangles{
+  display: flex; 
+  gap: 5%;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  width: 90%;            /* Full viewport width */
+  height: 100%;
+  position: relative;
+  transform: translateY(-20%);
+}
+.rectangle {
+  height: 100%; /* Same height for all */
+  width: 40%;  /* Adjust width as needed */
+  background-color: rgba(205, 223, 243, 0.39); /* Black at 50% opacity */
+}
+/* Adjust starting positions (vertical offset) using margin-top */
+.rect1 {
+  margin-top: 340px;
+} 
+.rect2 {
+  margin-top: 220px;
+  z-index: 1;
+}
+.rect3 {
+  margin-top: 100px;
+}
+
+.timeline-container-mobile {
+  display:none;
+}
+
+.plotweb-timeline{
+  position: absolute;  
+  width: 100%;
+  transform: translateY(-700px);
+  margin-bottom: 0px;
+}
+.timeline-explanation{
+  display: flex;
+  gap:8%;
+  position:absolute;
+  transform: translateY(-275px);
+  width: 85%;
+}
+.explanation-item{
+  width: 30%;
+}
+
+
+
 
 @media (max-width:500px) {
 
   .video-container {
     display: flex;
     flex-direction: column;
-    margin-top: 125px;
-    margin-left: 0px;
+    margin-top: 35vh;
+    /* margin-left: 0px; */
     gap: 50px;
     width: 100%;
     align-items: center;
   }
-  .video-wrapper{
-    /* margin-left: 10px; */
-    margin:0;
-    padding:0;
-    align-content: center;
-    width: 100%
-  }
 
-  .video{
+  .video-plotweb{
     /* height: 290px;  */
-    width: 288px;
-    margin: auto 0;
+    width: 45vh;
+    /* margin: auto 0; */
     /* width: 100%; */
   }
 
@@ -11739,6 +11803,58 @@ video {
     padding: 5px;
     /* margin-left: 5px; */
     text-align: center;
+  }
+
+  .rectangles{
+    display: none;
+  }
+
+  .timeline-section{
+    display: none;
+  }
+
+  .centered-header{
+    padding-top: 15vh;
+  }
+
+  .timeline-container-mobile {
+    position: relative;
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .timeline-container-mobile::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #CD9A9A;
+      z-index: -1;
+      transform: translateY(-50%);
+  }
+
+
+  .timeline-item-mobile {
+    width: 30%;  /* Adjust rectangle width */
+    height: 40%;  /* Adjust rectangle height */
+    background-color: #D9D9D9;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 10px;
+    position: relative;
+    z-index: 1;
+  } 
+  .mobile-rectangle{
+    height: 326px; /* Same height for all */
+    width: 300px;  /* Adjust width as needed */
+    background-color: rgba(205, 223, 243, 0.39);
   }
 }
 /* change to min width to keep instyle with template */
