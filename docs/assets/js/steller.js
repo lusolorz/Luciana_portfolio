@@ -30,3 +30,17 @@ $(document).ready(function(){
       	} 
     });
 });
+
+function toggleContent() {
+	const hiddenContent = document.querySelector('.hidden-content');
+	const button = document.getElementById('showMoreBtn');
+  
+	// Toggle the 'show' class on the hidden content
+	if (hiddenContent.classList.contains('show')) {
+	  hiddenContent.classList.remove('show');
+	  button.textContent = 'Show More';
+	} else {
+	  hiddenContent.classList.add('show');
+	  button.textContent = 'Show Less';
+	}
+}
