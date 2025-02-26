@@ -11731,7 +11731,7 @@ pre {
   display: flex; 
   gap: 5%;
   justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
+  /* align-items: center;     /* Centers vertically */
   width: 90%;            /* Full viewport width */
   height: 100%;
   position: relative;
@@ -11744,6 +11744,7 @@ pre {
 }
 /* Adjust starting positions (vertical offset) using margin-top */
 .rect1 {
+  height: 60%;
   margin-top: 340px;
 } 
 .rect2 {
@@ -11779,6 +11780,13 @@ pre {
   width: 30%;
 }
 
+.container-footer{
+  display: flex;
+  width: 85%;
+  justify-content: right;
+  align-items: center;
+  margin: 10vw, 5vw, 0, 10vw; 
+}
 
 
 
