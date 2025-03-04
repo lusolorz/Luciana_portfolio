@@ -8,6 +8,8 @@
     <title> PlotWeb </title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
 </head>
@@ -48,10 +50,10 @@
         </div>
     </div>
 
-    <h1 class = "centered-header"> Project Timeline </h1>
     <!-- Desktop -->
     <div class="timeline-section">
         <!-- Opaque Rectangles (Background) -->
+        <h1 class = "centered-header"> Project Timeline </h1>
         <div class="rectangles">
             <div class="rectangle rect1"></div>
             <div class="rectangle rect2"></div>
@@ -89,15 +91,22 @@
                     We met up with the Creative writing club to download the app onto their phones and test for a week. We asked them to 
                     email us with any bugs or features they would like to see added. 
                 </p>
+                <p style = "text-align: center;">
+                    “I like the addition of the optional description for relationships but having a one-way relationship between characters doesn't make 
+                    sense for some characters.” <br> <br>
+                    “How can I change character relationships after they've been created?” <br> <br>
+                    “I love the look of the graph!”
+                </p>
             </div>
             <div class = "explanation-item">
-                <h2> User Testing and Feedback </h2>
+                <h2> Final Product</h2>
                 <p> <br>
-                    Research
-                    To ensure our project aligned with the needs of creative writers, our team conducted research by engaging directly with them. 
-                    We asked what aspects of the writing process they found most challenging and what could be automated without compromising content or creativity. 
-                    The most common challenge they highlighted was avoiding plot holes and maintaining a cohesive plot structure.
+                   For our final product we took all the feedback given to us trhoughpout the testing process and applied it to our final MVP. We decided
+                   to add a reset graph function so that the user could restart the story if necessary we also added more options to the drop down menu for type 
+                   of relationship and allowed for multiple selction checkboxes to address the issue of one-way relationships. We also added an "edit" relationship
+                   button in order to address tht eproblem of editing character/relationships once they've been added. 
                 </p>
+                <img src="assets/imgs/Mvp2-plotweb.png" alt="MVP 2 with REset graph">
             </div>
         </div>
     </div>
@@ -116,21 +125,55 @@
         <div class="timeline-item-mobile" style="background-color: #878D87;">Final Product</div>
         <div class="timeline-item-mobile" style="background-color: #878D87;">Publish</div>
     </div>
-    <div class ="mobile-rectangle"> 
-        <h2> Research </h2>
-        <p> <br>
-            To ensure our project aligned with the needs of creative writers, our team conducted research by engaging directly with them. 
-            We asked what aspects of the writing process they found most challenging and what could be automated without compromising content or creativity. 
-            The most common challenge they highlighted was avoiding plot holes and maintaining a cohesive plot structure.
-        </p>
-    </div>
-    <div class ="mobile-rectangle"> 
-        <h2> Assign Tasks </h2>
-        <p> <br>
-            To ensure our project aligned with the needs of creative writers, our team conducted research by engaging directly with them. 
-            We asked what aspects of the writing process they found most challenging and what could be automated without compromising content or creativity. 
-            The most common challenge they highlighted was avoiding plot holes and maintaining a cohesive plot structure.
-        </p>
+    <div class = "mobile-rectangles">
+        <div class ="mobile-rectangle"> 
+            <h2> Research </h2>
+            <p> <br>
+                To ensure our project aligned with the needs of creative writers, our team conducted research by engaging directly with them. 
+                We asked what aspects of the writing process they found most challenging and what could be automated without compromising content or creativity. 
+                The most common challenge they highlighted was avoiding plot holes and maintaining a cohesive plot structure.
+            </p>
+        </div>
+        <div class ="mobile-rectangle"> 
+            <h2> Assign Tasks </h2>
+            <p> <br>
+                Each member of the team was responsible for their own area of the process, including data handling, design, and implementation. 
+            </p>
+        </div>
+        <div class ="mobile-rectangle"> 
+            <h2> Implementation </h2>
+            <p> <br>
+                My team an I developed a Flutter-based app that combines local data storage and dynamic graph visualization to help users 
+                manage and explore character relationships. Using SQLite with the sqflite package, we implemented a structured database 
+                to store character data and connections, ensuring efficient data retrieval and persistence. We leveraged Provider for 
+                state management and integrated GraphView to create an interactive, visual representation of relationships. Additionally, 
+                we incorporated multi_select_flutter to enhance user input. This project showcases my skills in mobile development, database 
+                management, and UI design while allowing me to explore creative problem-solving in app development. 
+            </p>
+        </div>
+        <div class ="mobile-rectangle"> 
+            <h2> User Testing and Feedback </h2>
+            <p> <br>
+                We met up with the Creative writing club to download the app onto their phones and test for a week. We asked them to 
+                email us with any bugs or features they would like to see added. <br>
+            </p>
+            <p style = "text-align: center;">
+                “I like the addition of the optional description for relationships but having a one-way relationship between characters doesn't make 
+                sense for some characters.” <br> <br>
+                “How can I change character relationships after they've been created?” <br> <br>
+                “I love the look of the graph!”
+            </p>
+        </div>
+        <div class ="mobile-rectangle"> 
+            <h2> Final Product </h2>
+            <p> <br>
+                For our final product we took all the feedback given to us trhoughpout the testing process and applied it to our final MVP. We decided
+                to add a reset graph function so that the user could restart the story if necessary we also added more options to the drop down menu for type 
+                of relationship and allowed for multiple selction checkboxes to address the issue of one-way relationships. We also added an "edit" relationship
+                button in order to address tht eproblem of editing character/relationships once they've been added. 
+             </p>
+             <img src="assets/imgs/Mvp2-plotweb.png" alt="MVP 2 with Reset graph button">
+        </div>
     </div>
 
     <!-- Page Footer -->
@@ -139,7 +182,7 @@
             <!-- <div class="row align-items-center"> -->
                 <div class="socials">
                     <a class="social-item" href="https://github.com/johuang50/plotweb/releases/tag/v1.0.0"><i class="ti-github"></i></a>
-                    <a class="social-item" href="https://www.figma.com/design/5fGefHLZGiYd5QY5Zljc3F/Luciana-Portfolio?node-id=0-1&t=gUTED0u063PKPWKa-1"><i class="ti-figma"></i></a>
+                    <a class="social-item" href="https://www.figma.com/design/5fGefHLZGiYd5QY5Zljc3F/Luciana-Portfolio?node-id=0-1&t=gUTED0u063PKPWKa-1"><i class="fab fa-figma"></i></a>
                 </div>
             <!-- </div> -->
         </div>

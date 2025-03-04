@@ -11684,6 +11684,8 @@ pre {
   background: white;
 }
 
+/* code by Luciana Solorzano */
+
 .video-container {
   display: flex;
   margin-top: 5vh; 
@@ -11744,10 +11746,11 @@ pre {
 }
 /* Adjust starting positions (vertical offset) using margin-top */
 .rect1 {
-  height: 60%;
+  height: 56%;
   margin-top: 340px;
 } 
 .rect2 {
+  /* height: ; */
   margin-top: 220px;
   z-index: 1;
 }
@@ -11759,25 +11762,32 @@ pre {
   display:none;
 }
 
-.mobile-rectangle{
+.mobile-rectangles{
   display: none;
 }
 
 .plotweb-timeline{
   position: absolute;  
   width: 100%;
-  transform: translateY(-700px);
+  transform: translateY(-35vw); 
   margin-bottom: 0px;
 }
 .timeline-explanation{
   display: flex;
   gap:8%;
   position:absolute;
-  transform: translateY(-5vh);
+  transform: translateY(9vw);
   width: 85%;
 }
 .explanation-item{
   width: 30%;
+}
+
+.explanation-item img {
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes extra spacing below inline images */
+  margin: 0 auto; /* Centers the image */
 }
 
 .container-footer{
@@ -11864,14 +11874,26 @@ pre {
     z-index: 1;
   } 
   
+  .mobile-rectangles{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
 
   .mobile-rectangle{
     display: block;
-    height: 326px; /* Same height for all */
+    height: calc(100% + 2px); /* Same height for all */
     width: 300px;  /* Adjust width as needed */
     background-color: rgba(205, 223, 243, 0.39);
     align-self: center;
     margin-bottom: 20px;
+  }
+  .mobile-rectangle img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing below inline images */
+    margin: 0 auto; /* Centers the image */
   }
 }
 
