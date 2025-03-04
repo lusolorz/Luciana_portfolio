@@ -8,6 +8,8 @@
     <title> PlotWeb </title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
 </head>
@@ -33,6 +35,42 @@
         </div>          
     </nav>
     <!-- End of page navibation -->
+
+    <div class = "solohelper-explanation">
+        <img src="assets/imgs/solohelper-prototype.png" alt="solohelper prototype landing page">
+        <p>
+            My sister, a chemistry teacher, recently approached me with a problem she had been facing. At the end of
+            every semester, she was required to determine which students would receive detentions or warnings depending 
+            on their absences (excused, unexcused, and late). Although this can be done on excel, most of her fellow teachers were
+            not aware or familiar with excels high-level functionality and simply manually checked their absences to determine
+            which students would receive detentions. I decided I would address this problem by creating a webapp with a login
+            that would function much like excel but only apply to teaching related functionality, like grading based on curves, 
+            inputting grades, and even using a combination of LaTeX and an AI Hugging face model to help generate tests for 
+            teachers. Although these functionalities will probably be implemented later I have decided to begin with the frontend
+            for the absences functionality. My next step will be to host the project with Amazon Lambda and use python for data processing. 
+        </p>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container-footer">
+            <!-- <div class="row align-items-center"> -->
+                <div class="socials">
+                    <a class="social-item" href="https://github.com/lusolorz/solo-helper"><i class="ti-github"></i></a>
+                    <a class="social-item" href="https://www.figma.com/proto/lJSjRXlaSf2wLw8Prxy8tN/Solo-helper?node-id=1-2&p=f&t=IxYlcE6F5v35w4ax-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"><i class="fab fa-figma"></i></a>
+                </div>
+            <!-- </div> -->
+        </div>
+    </footer>  
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
 
 </body>
 </html>
