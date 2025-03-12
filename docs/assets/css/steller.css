@@ -11817,6 +11817,17 @@ pre {
   width: 80%;
 }
 
+.accomplishments{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.accomplishment-item{
+  width: 30%;
+}
+
 
 
 
