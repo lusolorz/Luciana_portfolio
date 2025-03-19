@@ -11926,6 +11926,18 @@ pre {
     display: block; /* Removes extra spacing below inline images */
     margin: 0 auto; /* Centers the image */
   }
+
+  .accomplishments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .accomplishment-item{
+    width: 70%;
+  }
 }
 
 .hidden-content {
