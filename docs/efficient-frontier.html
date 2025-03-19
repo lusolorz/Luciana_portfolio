@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Luciana's Contact Page">
+    <meta name="author" content="Devcrud">
+    <title> PlotWeb </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#blog"><img src="assets/imgs/drawing.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="- btn btn-primary rounded ml-4" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <div class = "video-graph">
+        <video autoplay muted loop playsinline class = "efficient-graph-video">
+            <source src="assets/imgs/Effcient_frontier_graph_with_numrandom_forweights.mp4" type="video/mp4">
+        </video>
+        <p class = "efficient-graph-video-desc"> This is my attempt to graphh out an efficient frontier with an undervisified portfloio with EOD prices fetched from the 
+            Yahoo Finance API. I computed expected returns 
+            with numpy random to determine weights. This is simply a first attempt at graphing the efficient frontier based on 
+            Harry Markowitz's Modern Portfolio Theory. Next steps are to play with a different API called Polygon, use Montecarlo 
+            Simulation to generate different allocations, generate a more diversified portfolio, utilize the CAPM startegy to predict 
+            expected returns, and compare the present graph with the new one. <br>
+
+            I generated a report using LaTex document preparation software to further understand the mathematical framwork of the model. 
+            It can be downloaded below. 
+        </p>
+
+        <a href="assets/Modern_Portfolio_Theory_and_the_Markowitz_Model.pdf" download="MDT_report" style = "padding:20px">
+            <button class="btn btn-dark rounded">Download Report</button>
+        </a>
+    </div>
+    
+
+</body>
+</html>
